@@ -1,10 +1,29 @@
 # Решатель квадратных уравнений
 
-[TODO. Здесь будет описание проекта]
+quadratic_eqation.py содержит функцию get_roots (a, b, c) для вычисления корней квадратичного уравнения
+с коэффициентами: a, b, c. Вы можете импортировать модуль quadratic_eqation в свой скрипт
 
 # Как использовать
 
-[TODO. Здесь будет описание программного интерфейса: функции, их аргументы, формат ответа. Нужен пример кода демонстрирующий импорт модуля и использование функции.]
+Пример использования:
+
+import quadratic_eqation.py
+
+a = float(input('a = '))
+b = float(input('b = '))
+c = float(input('c = '))
+
+root1, root2 = quadratic_eqation.get_roots(a, b, c)
+
+if root1 is None:
+    print("root1 =  None ")
+else:
+    print("root1 =  %f " % (root1))
+
+if root2 is None:
+    print("root2 =  None " )
+else:
+    print("root2 =  %f " % (root2))
 
 # Как запустить
 
